@@ -1,0 +1,17 @@
+{
+    "ServerError": {
+        "type": "object",
+        "description": "Returned object",
+        "properties": {
+            "code": {
+                "type": "number",
+                "example": 500
+            },
+            "message": {
+                "type": "string",
+                "example": "Server failed. Contact the administrator!",
+                "description": "Error returned when something unexpected happened"
+            }
+        }
+    }
+}

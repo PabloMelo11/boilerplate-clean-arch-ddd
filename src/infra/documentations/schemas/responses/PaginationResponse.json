@@ -1,0 +1,26 @@
+{
+    "PaginationResponse": {
+        "properties": {
+            "count": {
+                "type": "number",
+                "example": 1,
+                "description": "Number of suppliers on the page"
+            },
+            "limit": {
+                "type": "number",
+                "example": 20,
+                "description": "Limit of returned suppliers"
+            },
+            "page": {
+                "type": "number",
+                "example": 1,
+                "description": "Current page"
+            },
+            "totalPages": {
+                "type": "number",
+                "example": 1,
+                "description": "Total number of pages"
+            }
+        }
+    }
+}

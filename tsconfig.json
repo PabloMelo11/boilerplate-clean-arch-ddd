@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "es5",
+            "es6",
+            "es2021"
+        ],
+        "skipLibCheck": true,
+        "importHelpers": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "allowJs": true,
+        "pretty": true,
+        "strict": true,
+        "noEmit": true,
+        "strictPropertyInitialization": false,
+        "useUnknownInCatchVariables": false,
+        "sourceMap": true,
+        "target": "ES2017",
+        "outDir": "./dist",
+        "rootDir": "./",
+        "baseUrl": "./src",
+        "esModuleInterop": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "resolveJsonModule": true,
+        "paths": {
+            "@domain/*": ["domain/*"],
+            "@application/*": ["application/*"],
+            "@infra/*": ["infra/*"],
+            "@shared/*": ["shared/*"]
+          },
+        "typeRoots": ["node_modules/@types"]
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
