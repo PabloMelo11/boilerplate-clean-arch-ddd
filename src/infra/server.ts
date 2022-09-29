@@ -2,7 +2,6 @@
 import 'reflect-metadata';
 import dotenv from 'dotenv';
 
-import CreateConnectionDb from '@infra/database/typeorm/connection';
 import Documentations from '@infra/documentations';
 import ExpressAdapter from '@infra/http/adapters/ExpressAdapter';
 import Routes from '@infra/http/routes';
@@ -16,8 +15,6 @@ dotenv.config();
 const http = new ExpressAdapter();
 
 (async () => {
-    await CreateConnectionDb().then(() => console.log('Connected Database 🔥'));
-
     new QueueKafka()
         .getInstance()
         .then((queue: IQueueConnection) => {
