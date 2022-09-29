@@ -7,7 +7,7 @@ export default class CommonRoutes {
             async handle(): Promise<Response> {
                 return {
                     code: 200,
-                    data: 'Supplier Authentication 1.0.0',
+                    data: 'Boilerplate Authentication 1.0.0',
                 };
             },
         });

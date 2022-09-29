@@ -7,7 +7,7 @@ export default class SwaggerJsDoc extends Controller {
     handle(): any {
         const swaggerDefinition: SwaggerDefinition = {
             info: {
-                title: 'API Supplier Authentication Service',
+                title: 'API Boilerplate Service',
                 description: 'This is the service routes documentation',
                 version: '1.0.0',
             },
